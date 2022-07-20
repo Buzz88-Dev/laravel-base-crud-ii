@@ -32,12 +32,12 @@
                             <a href="{{ route('houses.edit', ['house' => $item])}}" class="btn btn-warning">Edit</a>
                         </td>
                         <td>
-                            <a href="" class="btn btn-danger">Delete</a>
-                            {{-- <form action="{{ route('houses.destroy', ['house' => $Comics])}}" method="post">
+                            {{-- <a href="" class="btn btn-danger">Delete</a> --}}
+                            <form action="{{ route('houses.destroy', ['house' => $item])}}" method="post">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Delete</button>
-                            </form> --}}
+                            </form>
                         </td>
                     </tr>
                 @endforeach
